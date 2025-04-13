@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fit Fusion - Professional Gym & Fitness</title>
+    <link rel="stylesheet" href="index.css">
+    <script src="https://kit.fontawesome.com/f30fac2c61.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <nav id="navbar">
+            <div class="logo">
+                <h1>Fit Fusion</h1>
+            </div>
+            <ul id="navLinks">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#trainers">Trainers</a></li>
+                <li><a href="#testimonials">Testimonials</a></li>
+                <li><a href="#plans">Plans</a></li>
+                <li><a href="#schedule">Schedule</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><button id="mainBtn">Join Now</button></li>
+            </ul>
+            <i id="bar" class="fa-solid fa-bars"></i>
+        </nav>
+
+        <div class="join">
+            <h2>Sign Up</h2>
+            <input type="email" placeholder="Enter Email" id="email" required>
+            <input type="password" placeholder="Enter Password" id="pass" required>
+            <input type="tel" placeholder="Enter Phone Number" id="num" required>
+            <button id="join">Sign Up</button>
+        </div>
+
+        <!-- Hero Section -->
+        <header class="hero" id="home">
+            <div class="hero-content">
+                <h1>Transform Your Body Today</h1>
+                <h2>30% Off Memberships This Month!</h2>
+                <p>Join Fit Fusion for expert training, modern facilities, and a supportive community.</p>
+                <button id="heroBtn">Get Started</button>
+            </div>
+        </header>
+
+        <!-- Trainers Section -->
+        <section class="trainers" id="trainers">
+            <div class="head">
+                <h1>Meet Our <span>Expert Trainers</span></h1>
+            </div>
+            <div class="trainer-grid">
+                <div class="trainer-card">
+                    <img src="trainer1.jpg" alt="Trainer John" loading="lazy">
+                    <div class="trainer-info">
+                        <h2>John Carter</h2>
+                        <p>Strength & Conditioning Coach</p>
+                        <a href="https://www.youtube.com/@FitOn">Watch Videos</a>
+                    </div>
+                </div>
+                <div class="trainer-card">
+                    <img src="trainer2.jpg" alt="Trainer Lisa" loading="lazy">
+                    <div class="trainer-info">
+                        <h2>Lisa Ray</h2>
+                        <p>Yoga & Cardio Specialist</p>
+                        <a href="https://www.youtube.com/@POPSUGARFitness">Watch Videos</a>
+                    </div>
+                </div>
+                <div class="trainer-card">
+                    <img src="trainer3.jpg" alt="Trainer Mike" loading="lazy">
+                    <div class="trainer-info">
+                        <h2>Mike Lee</h2>
+                        <p>CrossFit & Nutrition Expert</p>
+                        <a href="https://www.youtube.com/@BodyFitByAmy">Watch Videos</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Testimonials Section -->
+        <section class="testimonials" id="testimonials">
+            <div class="head">
+                <h1>What Our <span>Members Say</span></h1>
+            </div>
+            <div class="testimonial-carousel">
+                <div class="testimonial active">
+                    <p>"Fit Fusion transformed my fitness journey. I lost 12 kg in 4 months!"</p>
+                    <h3>- Priya Sharma</h3>
+                </div>
+                <div class="testimonial">
+                    <p>"The trainers are inspiring, and the community feels like family."</p>
+                    <h3>- Arjun Patel</h3>
+                </div>
+                <div class="testimonial">
+                    <p>"Best gym in Mumbai! The classes are diverse and effective."</p>
+                    <h3>- Neha Kapoor</h3>
+                </div>
+            </div>
+            <div class="carousel-controls">
+                <button id="prevTestimonial"><i class="fa-solid fa-chevron-left"></i></button>
+                <button id="nextTestimonial"><i class="fa-solid fa-chevron-right"></i></button>
+            </div>
+        </section>
+
+        <!-- Membership Plans -->
+        <section class="plans" id="plans">
+            <div class="head">
+                <h1>Choose Your <span>Plan</span></h1>
+            </div>
+            <div class="plan-grid">
+                <div class="plan-card">
+                    <h2>Basic</h2>
+                    <p class="price">₹999/mo</p>
+                    <ul>
+                        <li>Gym Access</li>
+                        <li>Group Classes</li>
+                        <li>Locker Room</li>
+                    </ul>
+                    <button class="plan-btn">Select Plan</button>
+                </div>
+                <div class="plan-card">
+                    <h2>Pro</h2>
+                    <p class="price">₹1999/mo</p>
+                    <ul>
+                        <li>All Basic Features</li>
+                        <li>Personal Trainer</li>
+                        <li>Nutrition Guide</li>
+                    </ul>
+                    <button class="plan-btn">Select Plan</button>
+                </div>
+                <div class="plan-card">
+                    <h2>Elite</h2>
+                    <p class="price">₹2999/mo</p>
+                    <ul>
+                        <li>All Pro Features</li>
+                        <li>24/7 Access</li>
+                        <li>Private Coaching</li>
+                    </ul>
+                    <button class="plan-btn">Select Plan</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Class Schedule -->
+        <section class="schedule" id="schedule">
+            <div class="head">
+                <h1>Our <span>Class Schedule</span></h1>
+            </div>
+            <div class="schedule-filter">
+                <select id="dayFilter">
+                    <option value="all">All Days</option>
+                    <option value="Monday">Monday</option>
+                    <option value="Tuesday">Tuesday</option>
+                    <option value="Wednesday">Wednesday</option>
+                    <option value="Thursday">Thursday</option>
+                    <option value="Friday">Friday</option>
+                </select>
+            </div>
+            <div class="schedule-table">
+                <table id="scheduleTable">
+                    <thead>
+                        <tr>
+                            <th>Day</th>
+                            <th>Class</th>
+                            <th>Time</th>
+                            <th>Trainer</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Monday</td>
+                            <td>Yoga</td>
+                            <td>7:00 AM</td>
+                            <td>Lisa Ray</td>
+                        </tr>
+                        <tr>
+                            <td>Tuesday</td>
+                            <td>Cardio Kickboxing</td>
+                            <td>6:00 PM</td>
+                            <td>John Carter</td>
+                        </tr>
+                        <tr>
+                            <td>Wednesday</td>
+                            <td>CrossFit</td>
+                            <td>7:30 PM</td>
+                            <td>Mike Lee</td>
+                        </tr>
+                        <tr>
+                            <td>Thursday</td>
+                            <td>Zumba</td>
+                            <td>6:00 PM</td>
+                            <td>Lisa Ray</td>
+                        </tr>
+                        <tr>
+                            <td>Friday</td>
+                            <td>Strength Training</td>
+                            <td>5:30 PM</td>
+                            <td>John Carter</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <!-- BMI Calculator -->
+        <section class="bmi" id="bmi">
+            <div class="head">
+                <h1>Calculate Your <span>BMI</span></h1>
+            </div>
+            <div class="bmi-calculator">
+                <input type="number" id="height" placeholder="Height (cm)" min="50" max="250">
+                <input type="number" id="weight" placeholder="Weight (kg)" min="20" max="200">
+                <button id="calculateBmi">Calculate</button>
+                <p id="bmiResult"></p>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section class="contact" id="contact">
+            <div class="head">
+                <h1>Get In <span>Touch</span></h1>
+            </div>
+            <form class="contact-form">
+                <input type="text" id="contactName" placeholder="Your Name" required>
+                <input type="email" id="contactEmail" placeholder="Your Email" required>
+                <textarea id="contactMessage" placeholder="Your Message" required></textarea>
+                <button type="submit" id="contactSubmit">Send Message</button>
+            </form>
+        </section>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <div class="footer-grid">
+               
+                <div class="footer-col">
+                    <h2>Quick Links</h2>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#trainers">Trainers</a></li>
+                        <li><a href="#plans">Plans</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h2>Contact Info</h2>
+                    <p>Email: suhaasmanupala@gmail.com</p>
+                    <p>Phone: +919110555387</p>
+                    
+                </div>
+                <div class="footer-col">
+                    <h2>Connect With Us</h2>
+                    <p>Developed by Suhaas Manupala</p>
+                    <ul class="social-links">
+                        <li><a href="https://instagram.com/suhaas_lucky?igshid=Mzc0YWU1OWY=" target="_blank"><i class="fa-brands fa-instagram"></i></a></li>
+                        <li><a href="https://www.linkedin.com/in/suhaas-manupala-69a5b7257" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a></li>
+                        <li><a href="https://medium.com/@manupala.suhaas" target="_blank"><i class="fa-brands fa-medium"></i></a></li>
+                        <li><a href="https://github.com/yourusername" target="_blank"><i class="fa-brands fa-github"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="newsletter">
+                <h2>Subscribe to Our Newsletter</h2>
+                <form class="newsletter-form">
+                    <input type="email" id="newsletterEmail" placeholder="Enter Email" required>
+                    <button type="submit" id="newsletterSubmit">Subscribe</button>
+                </form>
+            </div>
+        </footer>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>
